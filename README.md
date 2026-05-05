@@ -2,7 +2,9 @@
 
 first multi-page website 
 
-HTML, CSS, Vanilla JS (Flex/Grid)
+HTML, CSS, Vanilla JS (Flex/Grid) 
+
+Yandex API
 
 
 
