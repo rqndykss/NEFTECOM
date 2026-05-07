@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сеть АЗС НЕФТЕКОМ</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=26fb654c-b639-46a8-96ff-6b8a625b2871&lang=ru_RU" type="module"></script>
+     <script type="module" src="map.js" defer></script>
   </head>
   <body>
     <header>
@@ -134,8 +136,61 @@
           </div>
         </div>
       </section>
+
+      <section class="app__section">
+        <div class="container">
+            <div class="app__section-content">
+              <div class="app__img-bg">
+              <div class="app__section-image">
+                <img src="images/tel 1.png" alt="">
+              </div>
+            </div>
+              <div class="app__section-text">
+                <div class="app__title">
+                <h4 class="app__title-text">Скачайте наше приложение</h4>
+              </div>
+                <div class="app__description">
+                  <p class="app__desc__first">Установите на свой смартфон мобильное приложение<br> «АЗС НЕФТЕКОМ»</p>
+                  <p class="app__desc__second">Создайте в приложении виртуальную карту
+и используйте свой телефон для накопления баллов или оплаты</p>
+
+                </div>
+
+                <div class="app__download">
+                  <a class="app-store" href="https://apps.apple.com/ru/app/servio-pump-mobile/id1458458139" target="_blank" ><img src="images/AppStore 1.png" alt=""></a>
+                  <a class="google-play" href="https://play.google.com/store/apps/details?id=ru.serviopump.spmobile&hl=ru&gl=US&pli=1" target="_blank"><img src="images/GooglePlay 1.png" alt=""></a>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="map__section">
+        <div class="container">
+          <div class="map__section-content">
+            <div class="map__section-text">
+              <h5 class="map__section-title">АЗС НЕФТЕКОМ на карте</h5>
+              <p class="map__section-desc">Ознакомьтесь со всеми нашими заправочными станциями на карте!</p>
+              <div class="map__btn">
+                <a href="#" class="map__button">Узнать подробнее</a>
+            </div>
+            </div>
+
+              
+
+            <div id="map-test" class="map">
+                
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
     </main>
 
     <script src="script.js"></script>
+    
+   
   </body>
 </html>
