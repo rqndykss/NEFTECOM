@@ -6,10 +6,10 @@
 
 ## Используемые технологии
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![Yandex Maps API](https://img.shields.io/badge/Yandex_Maps_API-FFCC00?style=for-the-badge\&logo=yandex\&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![Yandex](https://img.shields.io/badge/Yandex_API-%23ff0000.svg?style=for-the-badge&logo=yandex&logoColor=white)
 
 * HTML5
 * CSS3
