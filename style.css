@@ -13,6 +13,13 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
 li {
   text-decoration: none;
 }
@@ -611,6 +618,7 @@ footer {
   margin-top: 30px;
   background-color: #000061;
   padding: 100px 0 100px 0;
+  max-height: 500px;
 }
 
 .footer__content {
@@ -746,4 +754,27 @@ color: rgba(255, 255, 255, 0.57);
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+
+
+.git-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.a-gh {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+  font-family: var(--main-font);
+  color: rgb(48, 48, 48);
+}
+
+.gh-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 80px;
+  
 }
