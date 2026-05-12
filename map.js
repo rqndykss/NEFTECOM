@@ -43,7 +43,28 @@ function init() {
 
     map2.geoObjects.add(placemark2);
 
-    [map1, map2].forEach(map => {
+
+    let map3 = new ymaps.Map('map-test-3', {
+        center: center2,
+        zoom: 16
+    });
+
+    let placemark3 = new ymaps.Placemark(
+        [56.010739, 92.841843],
+        {
+            balloonContentHeader: 'Проспект Мира, 128'
+        },
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/marker-2.svg',
+            iconImageSize: [74, 74],
+            iconImageOffset: [-20, -50]
+        }
+    );
+
+    map3.geoObjects.add(placemark2);
+
+    [map1, map2, map3].forEach(map => {
         map.controls.remove('geolocationControl');
         map.controls.remove('typeSelector');
         map.controls.remove('rulerControl');

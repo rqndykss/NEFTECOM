@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Программа лояльности</title>
     <script src="map.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="loyality.css">
-</head>
-<body>
-         <header>
+    <script src="animateBonus.js"></script>
+    <link rel="stylesheet" href="loyality.css" />
+  </head>
+  <body>
+    <header>
       <div class="container">
         <div class="header__content">
           <a class="logo" href="#"
@@ -20,7 +20,11 @@
             <nav class="header__nav">
               <ul class="header__nav-links">
                 <li><a href="index.html" class="header__link">Главная</a></li>
-                <li><a href="loyality.html" class="header__link active">Бонусная программа</a></li>
+                <li>
+                  <a href="loyality.html" class="header__link active"
+                    >Бонусная программа</a
+                  >
+                </li>
                 <li><a href="#" class="header__link">Сеть АЗС</a></li>
                 <li><a href="#" class="header__link">Вакансии</a></li>
                 <li><a href="#" class="header__link">Для юр. лиц</a></li>
@@ -37,30 +41,419 @@
           </div>
         </div>
 
-        <div class="hero__section">
-          <div class="hero__wrapper">
-            <div class="hero__content">
-              <div class="hero__text">
-                <h2 class="hero__title">
-                  Получай до 10% бонусов с каждого посещения!
-                </h2>
-                <p class="hero__desc">
-                  Оформите карту лояльности “НЕФТЕКОМ” и получайте до 10%
-                  бонусов на топливо, кафе и всю продукцию на АЗС НЕФТЕКОМ!
-                </p>
-
-                <div class="hero__btn">
-                  <a href="#" class="hero__button">Оформить карту лояльности</a>
-                </div>
+        <div class="block__section">
+          <div class="block__content">
+            <div class="card__block-flex">
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">13 АЗС</p>
+                  <p class="card__desc">в Красноярском крае</p>
+                </a>
               </div>
 
-              <div class="hero__image">
-                <img src="images/card.png" alt="" class="hero__img" />
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">150</p>
+                  <p class="card__desc">Сотрудников</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">1000</p>
+                  <p class="card__desc">Клиентов в день</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">5000</p>
+                  <p class="card__desc">Победителей в год</p>
+                </a>
+              </div>
+
+              <div class="quality-all">
+                <img
+                  class="quality__img"
+                  src="images/Vector.svg"
+                  draggable="false"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-</body>
+
+    <main>
+      <section class="loyality__section">
+        <div class="container">
+          <div class="home__bonus-text">
+            <p class="home__bonus">
+              <a class="home__link" href="index.html">Главная</a> <span class="home__span">&#62;</span>Бонусная программа
+            </p>
+          </div>
+
+          <div class="loality__programm">
+            <h1 class="loaylity__text">Программа лояльности “НЕФТЕКОМ”</h1>
+            <p class="loyality__desc">
+              При покупке нефтепродуктов, товаров в маркете «Нефтеком» и кафе
+              находящихся на АЗС «Нефтеком» бонусы начисляются в следующем
+              порядке:
+            </p>
+          </div>
+
+          <div class="table__wrapper">
+            <table class="table__loyality">
+              <thead>
+                <tr>
+                  <th>Сумма покупок</th>
+                  <th>
+                    Количество начисляемых Бонусов при покупке топлива (за
+                    каждый литр)
+                  </th>
+                  <th>
+                    Количество начисляемых Бонусов при покупке товаров в маркет
+                    «Нефтеком» в процентах от суммы покупки
+                  </th>
+                  <th>
+                    Количество начисляемых Бонусов при покупке товаров в кафе
+                    находящихся <br />
+                    на АЗС «Нефтеком» в процентах от суммы покупки
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>до 699,99 рублей</td>
+                  <td>1 бонус</td>
+                  <td>2%</td>
+                  <td>5%</td>
+                </tr>
+
+                <tr>
+                  <td>от 700 до 1999,99 рублей</td>
+                  <td>1,2 бонус</td>
+                  <td>2%</td>
+                  <td>7%</td>
+                </tr>
+
+                <tr>
+                  <td>Свыше 2000 рублей</td>
+                  <td>1,5 бонус</td>
+                  <td>2%</td>
+                  <td>10%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="under">
+            <div class="undertable__text">
+              <p class="under__text">
+                <span class="under__span">*</span> - Срок действия бонусов - 300
+                (триста) календарных дней с момента осуществления покупки.
+              </p>
+              <p class="under__text">
+                <span class="under__span">**</span> - Списание бонусов может
+                производиться в размере не более 50% от суммы покупки
+              </p>
+            </div>
+
+            <div class="under__button">
+              <a href="#" class="under__btn">Условия программы лояльности</a>
+            </div>
+          </div>
+
+          <div class="under__card-wrapper">
+            <div class="under__card-content">
+              <div class="item__under">
+                <img src="images/Ruble.svg" alt="" class="under__img" />
+                <p class="item__under-text">
+                  Стоимость бонусной карты<br/>
+                  <span style="font-weight: 500;" >150 рублей</span>
+                </p>
+              </div>
+
+              <div class="item__under">
+                <img src="images/Gas Station.svg" alt="" class="under__img" />
+                <p class="item__under-text">
+                  Приобрести карту можно на любой заправочной станции сети
+                  “Нефтеком”
+                </p>
+              </div>
+
+              <div class="item__under">
+                <img src="images/Smartphone 2.svg" alt="" class="under__img" />
+                <p class="item__under-text">
+                  Так же вы можете зарегистрировать бесплатную
+                  <a class="virtual__card-link" href="#">виртуальную карту</a> в
+                  нашем приложении.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="virtual__card-section">
+        <div class="container">
+            <h1 class="loaylity__text">Как получить виртуальную карту</h1>
+
+            <div class="virtual__card__content">
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">01</p>
+                <p class="virtual__card__title">Скачайте приложение serviopump mobile
+в <a class="store-link" href="#">AppStore</a> или <a class="store-link" href="#">Google play.</a></p>
+              </div>
+
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">02</p>
+                <p class="virtual__card__title">Пройдите полную регистрацию: введите номер телефона, придумайте пароль для входа
+в приложение, ФИО, дату рождения.</p>
+              </div>
+
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">03</p>
+                <p class="virtual__card__title">Найдите и выберите в списке
+сеть НЕФТЕКОМ.</p>
+              </div>
+
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">04</p>
+                <p class="virtual__card__title">Нажмите Регистрация в сети АЗС, далее введите специальный код из SMS.</p>
+              </div>
+
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">05</p>
+                <p class="virtual__card__title">Во вкладке "ПОКУПКИ" будет виден ваш бонусный баланс и все операции по карте.</p>
+              </div>
+
+              <div class="virtual__card__item">
+                <p class="virtual__card-number">06</p>
+                <p class="virtual__card__title">Во вкладке "КАРТЫ" будет отображаться QR-код, который необходимо предъявлять на кассе АЗС
+для начисления и списания бонусов.</p>
+              </div>
+
+            </div>
+
+
+            <section class="info-section">
+  <div class="container">
+
+    <div class="info-section__wrapper">
+
+      <div class="info-section__left">
+        <p class="info-section__text">
+          Бонусы можно потратить на следующий день.
+          Более подробно с правилами участия в Программе
+          лояльности физических лиц — клиентов сети АЗС
+          ООО «Нефтеком» можно ознакомиться
+          <a href="#" class="info-section__link">здесь</a>.
+        </p>
+      </div>
+
+      <div class="info-section__right">
+
+  <p class="info-for">
+    Информация для справок:
+  </p>
+
+  <div class="info-grid">
+
+    <div class="info-item">
+      <img src="images/Phone Calling.svg" alt="Телефон">
+
+      <div class="info-item__text">
+        <span>Телефон:</span>
+
+        <a href="tel:+73912864390">
+          8 (391) 286-43-90
+        </a>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <img src="images/Chat Round Dots.svg" alt="Мессенджеры">
+
+      <div class="info-item__text">
+        <span>Мессенджеры:</span>
+
+        <a href="tel:+79535864390">
+          8 (953) 586-43-90
+        </a>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <img src="images/email.svg" alt="Почта">
+
+      <div class="info-item__text">
+        <span>Почта:</span>
+
+        <a href="mailto:promo@neftecom24.ru">
+          promo@neftecom24.ru
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="https://vk.com/neftecom24" class="vk-btn">
+    <img src="images/vk.svg" alt="VK">
+    Мы ВКонтакте
+  </a>
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="site__nav">
+              <p class="site__title">Навигация по сайту</p>
+              <ul class="footer__ul">
+                <div class="content">
+              <li><a href="#" class="footer__links">Главная</a></li>
+              <li><a href="#" class="footer__links">Бонусная программа</a></li>
+              <li><a href="#" class="footer__links">Сеть АЗС</a></li>
+              <li><a href="#" class="footer__links">Вакансии</a></li>
+              <li><a href="#" class="footer__links">Для юридических лиц</a></li>
+              <li><a href="#" class="footer__links">Контакты</a></li>
+              <li><a href="#" class="footer__links">Карта сайта</a></li>
+              <li><a href="#" class="footer__links">Политика конфиденциальности</a></li>
+              <li><a href="#" class="footer__links">Личный кабинет</a></li>
+            </div>
+            </ul>
+            </div>
+
+            <div class="site__nav--second">
+              <p class="site__title">Наши контакты</p>
+              <ul class="footer__ul">
+                <div class="content">
+                <p class="office">Офис:</p>
+                <p class="adress">660021, Россия, Красноярск,<br> 
+пр. Мира, 128 (оф.140)</p>
+                  <div class="tel">
+                  <p class="telephone">Телефон:</p>
+                  <a href="tel:+78912650448" class="telephone__number">+7 (391) 265-04-48</a>
+                  <p class="tel__desc">отдел канцеляриии
+Часы работы: с 09:00-18:00</p>
+                </div>
+              </div>
+              </ul>
+            </div>
+
+            <div class="site__nav--third">
+              <ul class="footer__ul">
+                
+                <div class="content">
+                  <p class="email-text">E-mail:</p>
+                <div class="mail">
+                <a href="mailto:neftecom-@mail.ru" class="email">neftecom-@mail.ru</a>
+                <p class="email__desc">отдел канцелярии</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:sale@kroil24.ru" class="email">sale@kroil24.ru</a>
+                <p class="email__desc">Оптовая реализация ГСМ</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:promo@neftecom24.ru" class="email">promo@neftecom24.ru</a>
+                <p class="email__desc">Отдел маркетинга</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:kachestvo@neftecom24.ru" class="email">kachestvo@neftecom24.ru</a>
+                <p class="email__desc">Контроль качества</p>
+              </div>
+            </div>
+              </ul>
+            </div>
+
+          </nav>
+
+            <div id="map-test-3" class="map3">
+                
+            </div>
+
+      </div>
+    </footer>
+
+  </body>
 </html>
