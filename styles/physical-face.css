@@ -1,0 +1,58 @@
+@import url(../styles/reset.css);
+@import url(../styles/loyality.css);
+@import url(../styles/style.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --blue: #0000de;
+  --light-gray: #fafafa;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Manrope", sans-serif;
+  --dark-blue: #060628;
+  
+}
+
+strong {
+    font-family: var(--main-font);
+font-weight: 600;
+font-size: 20px;
+line-height: 153%;
+color: #060628;
+margin-right: 5px;
+}
+
+.phys-section {
+    font-family: var(--main-font);
+    margin-bottom: 100px;
+}
+.home__bonus-text {
+
+    margin-bottom: 106px;
+}
+
+.phys-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 400;
+font-size: 20px;
+line-height: 153%;
+color: #060628;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.card__desc {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffff;
+  text-align: start;
+}

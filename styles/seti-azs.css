@@ -1,0 +1,100 @@
+@import url(../styles/reset.css);
+@import url(../styles/style.css);
+@import url(../styles/physical-face.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --blue: #0000de;
+  --light-gray: #fafafa;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Manrope", sans-serif;
+  --dark-blue: #060628;
+  
+}
+
+.home__bonus-text {
+    margin-bottom: 50px;
+}
+.card__text {
+  font-family: var(--main-font);
+  font-weight: 400;
+font-size: 36px;
+color: #fff;
+}
+
+.gas__section {
+    font-family: var(--main-font);
+    color: var(--dark-blue);
+}
+
+.gas__text {
+    position: relative;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.gas__text::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: #0000de;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+}
+
+
+.azs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.azs-item {
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+}
+
+.azs-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+font-size: 20px;
+    
+}
+
+.azs-list {
+ 
+    
+}
+.azs-name {
+    padding-left: 18px;
+    position: relative;
+    font-weight: 400;
+    text-wrap: nowrap;
+font-size: 18px;
+line-height: 160%;
+color: #060628;
+}
+
+.azs-name::before {
+    content: "•";
+    position: absolute;
+    font-size: 50px;
+    line-height: 1.5;
+    color: #0000de;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 320px) {
+    .azs-grid {
+        grid-template-columns: 1fr;
+    }
+}
