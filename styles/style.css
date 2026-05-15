@@ -108,7 +108,8 @@ header {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fff;
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__btn {
