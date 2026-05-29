@@ -1,0 +1,172 @@
+@import url(../styles/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  --blue: #0000de;
+  --light-gray: #fafafa;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Manrope", sans-serif;
+  --dark-blue: #060628;
+}
+
+main {
+  font-family: var(--main-font);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding: 34px 0;
+  /* min-height: 950px; - УДАЛЕНО, чтобы шапка не была гигантской */
+  position: relative;
+  background: white;
+  font-family: var(--second-font); /* Использована переменная вместо жестко заданного шрифта */
+  margin-bottom: 70px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #575757;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #060628;
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 0 0 5px 0;
+}
+
+.header__link.active {
+  border-bottom: 2px solid var(--blue);
+}
+
+.header__link:hover:not(.active) {
+  border-bottom: 1px solid var(--blue);
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.number {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #060628;
+  text-decoration: none;
+  text-align: end;
+}
+
+.form__call {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #060628;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__btn {
+  padding: 15px 38px;
+  border-radius: 15px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+}
+
+.home__bonus-text {
+  margin: 0; 
+}
+.home__link {
+  font-weight: 400;
+font-size: 16px;
+margin-bottom: 50px;
+color: #060628;
+text-decoration: none;
+&:hover {
+  color: #0d6efd;
+}
+}
+
+.gas__text {
+    position: relative;
+    font-weight: 600;
+    color: var(--dark-blue);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.gas__text::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: #0000de;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+}
+
+
+ul {
+    list-style: disc;
+
+}
+
+.site-map-title {
+font-weight: 500;
+font-size: 16px;
+color: #060628;
+}
+
+.site-map-li {
+  color: #060628;
+  transition: .2s;
+  &:hover {
+    color: #0d6efd;
+  }
+}
+
+li::marker {
+    color: var(--blue);
+}
+
+.header__nav-links {
+    list-style: none;
+    cursor: pointer;
+}
+
+.site-map-ul {
+  display: flex;
+  flex-direction: column;
+}

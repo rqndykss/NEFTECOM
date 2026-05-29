@@ -1,0 +1,116 @@
+@import url(../styles/reset.css);
+@import url(../styles/vacancies.css);
+:root {
+  --blue: #0000de;
+  --light-gray: #fafafa;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Manrope", sans-serif;
+  --dark-blue: #060628;
+}
+
+main {
+  font-family: var(--main-font);
+}
+
+
+.contacts-main {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;        
+    gap: 40px;                     
+    margin-top: 20px;
+}
+
+.gas__text::before {
+       content: "";
+    height: 1px;
+    width: 26px;
+    position: absolute;
+    background-color: #0000de;
+    top: 25px;
+    left: -50px;
+}
+
+.contacts-info {
+    flex: 1; 
+}
+
+.contacts-item {
+    display: flex;
+    gap: 15px;
+}
+
+.contacts-item__other {
+    display: flex;
+    align-items: center;
+
+}
+
+.item-other-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacts-section {
+  margin-bottom: 24px;
+  
+}
+
+
+.contact-title {
+  font-weight: 600;
+font-size: 20px;
+color: #060628;
+margin-bottom: 10px;
+}
+
+.contacts-row {
+  display: flex;
+  align-items: flex-start; 
+  gap: 16px;
+ }
+
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fafafa;
+  border-radius: 15px; 
+  flex-shrink: 0; 
+}
+
+.contact-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
+}
+
+.contacts-text {
+  font-weight: 500;
+    font-size: 16px;
+    color: #060628;
+}
+
+
+.contacts-desc {
+  font-weight: 400;
+font-size: 12px;
+color: #060628;
+}

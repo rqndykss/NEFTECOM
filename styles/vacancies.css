@@ -1,0 +1,153 @@
+@import url(../styles/reset.css);
+@import url(../styles/style.css);
+@import url(../styles/physical-face.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --blue: #0000de;
+  --light-gray: #fafafa;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Manrope", sans-serif;
+  --dark-blue: #060628;
+  
+}
+
+.header__nav-links {
+    list-style: none;
+}
+
+.vacancies__section {
+    margin-bottom: 50px;
+    font-family: var(--main-font);
+}
+
+.home__bonus {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.gas__text {
+    position: relative;
+    font-weight: 600;
+    color: var(--dark-blue);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.gas__text::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: #0000de;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+}
+
+ul {
+    list-style: disc;
+    color: #0000de;
+}
+
+.vacancies__wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.vacancies__img {
+    max-width: 703px;
+    max-height: 469px;
+}
+
+.vacancies__item {
+
+}
+
+.vacans__text {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark-blue);
+}
+
+.vacans__desc {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-blue);
+    padding: 10px 0 10px 0;
+}
+
+.vacans__ul {
+    margin-left: 15px;
+    
+}
+
+.vacans__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--dark-blue);
+}
+
+li::marker {
+    color: var(--blue);
+}
+
+
+.mail-requst {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--dark-blue);
+    padding-bottom: 20px;
+    
+}
+
+.vacans__gird {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background:  #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.item__grid {
+    display: flex;
+}
+
+.grid__item-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.grid__mail-img {
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 8px;
+}
+
+.gird-mail-text {
+    font-weight: 400;
+    font-size: 16px;
+     color: var(--dark-blue);
+}
+
+.gird-mail {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-blue);    
+}
+
+.footer__ul {
+    list-style: none;
+}
+
+#map-test-7 {
+    width: 100%;
+    height: 323px;
+    border-radius: 15px;
+    overflow: hidden;
+}

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сети АЗС НЕФТЕКОМ</title>
     <link rel="stylesheet" href="styles/seti-azs.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=26fb654c-b639-46a8-96ff-6b8a625b2871&lang=ru_RU"></script>
+    <script src="scripts/map.js"></script>
+    
   </head>
   <body>
     <header>
@@ -28,9 +31,9 @@
                     >Сеть АЗС</a
                   >
                 </li>
-                <li><a href="#" class="header__link">Вакансии</a></li>
-                <li><a href="#" class="header__link">Для юр. лиц</a></li>
-                <li><a href="#" class="header__link">Контакты</a></li>
+                <li><a href="vacancies.html" class="header__link">Вакансии</a></li>
+                <li><a href="dlya-ur-lic.html" class="header__link">Для юр. лиц</a></li>
+                <li><a href="kontakti.html" class="header__link">Контакты</a></li>
               </ul>
             </nav>
 
@@ -64,7 +67,7 @@
                       />
                     </svg>
                   </div>
-                  <p class="card__text">13 АЗС</p>
+                  <a href="seti-azs.html" class="card__text">13 АЗС</a>
                   <p class="card__desc">в Красноярском крае</p>
                 </a>
               </div>
@@ -165,6 +168,7 @@
           <h1 class="gas__text">Сеть АЗС НЕФТЕКОМ</h1>
         </div>
 
+        <div class="azs-anim">
         <div class="azs-grid">
           <div class="azs-item">
             <p class="azs-title">Адреса АЗС НЕФТЕКОМ в Красноярске:</p>
@@ -199,6 +203,303 @@
           </div>
         </div>
       </div>
+
+      <div id="map-test-6" class="map6">
+                
+            </div>
+
+            <div class="gas__title">
+          <h1 class="gas__text">Актуальная стоимость топлива на АЗС НЕФТЕКОМ</h1>
+            </div>
+
+
+            <div class="table__wrapper">
+            <table class="fuel-table">
+  <thead class="fuel-table__head">
+    <tr class="fuel-table__row fuel-table__row--head">
+      <th class="fuel-table__cell fuel-table__cell--station">
+        Адрес АЗС / Наим. топлива
+      </th>
+      <th class="fuel-table__cell">АИ-92</th>
+      <th class="fuel-table__cell">АИ-92 HS</th>
+      <th class="fuel-table__cell">АИ-95</th>
+      <th class="fuel-table__cell">АИ-95 HS</th>
+      <th class="fuel-table__cell">АИ-98</th>
+      <th class="fuel-table__cell">АИ-98HS</th>
+      <th class="fuel-table__cell">ДТ Э(Евро)</th>
+      <th class="fuel-table__cell">ДТ Евро EKS</th>
+    </tr>
+  </thead>
+
+  <tbody class="fuel-table__body">
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС ул. Айвазовского 57а
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС г. Громадск
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС ул. Комсомольский 2а
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС ул. Северное шоссе 35ж
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Стрелка
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС ул. Петра Подзолкова 15
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Ангарский ул. Автодорожная 1
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Ангарский ул. Молодежная 11б
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Богучаны
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Говорково
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Карабула
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Пинчуга
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+    <tr class="fuel-table__row">
+      <td class="fuel-table__cell fuel-table__cell--station">
+        АЗС п. Таежный
+      </td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+      <td class="fuel-table__cell">46,00</td>
+    </tr>
+
+  </tbody>
+</table>
+  </div>
+      </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="site__nav">
+              <p class="site__title">Навигация по сайту</p>
+              <ul class="footer__ul">
+                <div class="content">
+              <li><a href="index.html" class="footer__links">Главная</a></li>
+              <li><a href="loyality.html" class="footer__links">Бонусная программа</a></li>
+              <li><a href="seti-azs.html" class="footer__links">Сеть АЗС</a></li>
+              <li><a href="#" class="footer__links">Вакансии</a></li>
+              <li><a href="#" class="footer__links">Для юридических лиц</a></li>
+              <li><a href="#" class="footer__links">Контакты</a></li>
+              <li><a href="#" class="footer__links">Карта сайта</a></li>
+              <li><a href="#" class="footer__links">Политика конфиденциальности</a></li>
+              <li><a href="#" class="footer__links">Личный кабинет</a></li>
+            </div>
+            </ul>
+            </div>
+
+            <div class="site__nav--second">
+              <p class="site__title">Наши контакты</p>
+              <ul class="footer__ul">
+                <div class="content">
+                <p class="office">Офис:</p>
+                <p class="adress">660021, Россия, Красноярск,<br> 
+пр. Мира, 128 (оф.140)</p>
+                  <div class="tel">
+                  <p class="telephone">Телефон:</p>
+                  <a href="tel:+78912650448" class="telephone__number">+7 (391) 265-04-48</a>
+                  <p class="tel__desc">отдел канцеляриии
+Часы работы: с 09:00-18:00</p>
+                </div>
+              </div>
+              </ul>
+            </div>
+
+            <div class="site__nav--third">
+              <ul class="footer__ul">
+                
+                <div class="content">
+                  <p class="email-text">E-mail:</p>
+                <div class="mail">
+                <a href="mailto:neftecom-@mail.ru" class="email">neftecom-@mail.ru</a>
+                <p class="email__desc">отдел канцелярии</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:sale@kroil24.ru" class="email">sale@kroil24.ru</a>
+                <p class="email__desc">Оптовая реализация ГСМ</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:promo@neftecom24.ru" class="email">promo@neftecom24.ru</a>
+                <p class="email__desc">Отдел маркетинга</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:kachestvo@neftecom24.ru" class="email">kachestvo@neftecom24.ru</a>
+                <p class="email__desc">Контроль качества</p>
+              </div>
+            </div>
+              </ul>
+            </div>
+
+          </nav>
+
+            <div id="map-test-4" class="map4">
+                
+            </div>
+
+            
+            
+        </div>
+
+
+        
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

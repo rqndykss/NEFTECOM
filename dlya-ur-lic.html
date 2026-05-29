@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оптовая поставка светлых нефтепродуктов</title>
+    <link rel="stylesheet" href="styles/legal entities.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=26fb654c-b639-46a8-96ff-6b8a625b2871&lang=ru_RU"></script>
+    <script src="scripts/map.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <a class="logo" href="#"
+            ><img src="images/logo.png" alt="Logo" class="header__logo"
+          /></a>
+
+          <div class="header__right">
+            <nav class="header__nav">
+              <ul class="header__nav-links">
+                <li><a href="index.html" class="header__link">Главная</a></li>
+                <li>
+                  <a href="loyality.html" class="header__link"
+                    >Бонусная программа</a
+                  >
+                </li>
+                <li>
+                  <a href="seti-azs.html" class="header__link">Сеть АЗС</a>
+                </li>
+                <li>
+                  <a href="vacancies.html" class="header__link">Вакансии</a>
+                </li>
+                <li>
+                  <a href="dlya-ur-lic.html" class="header__link active"
+                    >Для юр. лиц</a
+                  >
+                </li>
+                <li><a href="kontakti.html" class="header__link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="call">
+              <a class="number" href="tel:+89535864390">8 953 586 43 90</a>
+              <a href="#" class="form__call">Обратный звонок</a>
+            </div>
+
+            <button class="header__btn">Личный кабинет</button>
+          </div>
+        </div>
+
+        <div class="block__section">
+          <div class="block__content">
+            <div class="card__block-flex">
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <a href="seti-azs.html" class="card__text">13 АЗС</a>
+                  <p class="card__desc">в Красноярском крае</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">150</p>
+                  <p class="card__desc">Сотрудников</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">1000</p>
+                  <p class="card__desc">Клиентов в день</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">5000</p>
+                  <p class="card__desc">Победителей в год</p>
+                </a>
+              </div>
+
+              <div class="quality-all">
+                <img
+                  class="quality__img"
+                  src="images/Vector.svg"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="ur__section">
+        <div class="container">
+          <div class="home__bonus-text">
+            <p class="home__bonus">
+              <a class="home__link" href="index.html">Главная</a>
+              <span class="home__span">&#62;</span> Для юридических лиц
+            </p>
+          </div>
+
+          <div class="gas__title">
+            <h1 class="gas__text">Оптовая поставка светлых нефтепродуктов</h1>
+          </div>
+
+          <div class="ur__section-wrapper">
+            <div class="ur__flex-item">
+              <div class="text-flex">
+                <p class="ur__flex-text">
+                  Мы являемся постоянным участником торгов секции
+                  "Нефтепродукты" ЗАО "СПбМТСБ" (Санкт-Петербургской
+                  международной товарно-сырьевой биржи), что позволяет
+                  осуществлять прямые железнодорожные поставки со всех заводов
+                  России: Омского и Ангарского НПЗ, Уфимской группы НПЗ,
+                  Сургутского ЗСК и прочих.
+                </p>
+              </div>
+              <img
+                src="images/ur frame first.png"
+                alt=""
+                class="ur__img-first"
+              />
+            </div>
+
+            <div class="ur__flex-item">
+              <img
+                src="images/ur frame second.png"
+                alt=""
+                class="ur__img-second"
+              />
+              <div class="text-flex">
+                <p class="ur__flex-text-second">
+                  Реализация нефтепродуктов в Богучанском районе Красноярского
+                  края ведется через нефтебазу "Таёжный" (станция Карабула
+                  Красноярской ЖД).
+                </p>
+                <p class="ur__flex-text-second">
+                  Отпуск происходит как на условиях самовывоза, так и с
+                  доставкой автоцистернами до ваших складов в пределах
+                  Богучанского, Кежемского, Эвенкийского районов.
+                </p>
+                <p class="ur__flex-text-second">
+                  На нефтебазе также можно приобрести следующие масла и
+                  спецжидкости в бочках по 216 литров: М10Г2 (М8Г2), М10Г2к
+                  (М8Г2к), М10ДМ (М8ДМ), ТСП-15К, ВМГЗ, Тосол А-40Д, М8В, ГК.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fuel__section">
+        <div class="container">
+          <div class="gas__title">
+            <h1 class="gas__text">Мы поставляем</h1>
+          </div>
+
+          <div class="fuel-grid">
+            <div class="fuel-item">
+              <img src="images/Дизельное 1.png" alt="" class="fuel-img" />
+              <div class="fuel-text">Дизельное топливо</div>
+              <a href="#" class="fuel-price-btn">Узнать стоимость</a>
+            </div>
+
+            <div class="fuel-item">
+              <img src="images/Дизельное 2.png" alt="" class="fuel-img" />
+              <div class="fuel-text">Дизельное топливо</div>
+              <a href="#" class="fuel-price-btn">Узнать стоимость</a>
+            </div>
+
+            <div class="fuel-item">
+              <img src="images/Дизельное 3.png" alt="" class="fuel-img" />
+              <div class="fuel-text">Дизельное топливо</div>
+              <a href="#" class="fuel-price-btn">Узнать стоимость</a>
+            </div>
+          </div>
+          <p class="under__fuel-text">
+            Поставка осуществляется как автоцистернами с заводов Красноярского
+            края с доставкой до вашего склада,<br />
+            так и по железной дороге с заводов по всей России.
+          </p>
+        </div>
+      </section>
+
+      <section class="our__partners">
+        <div class="container">
+          <div class="wrapper__partners">
+            <div class="gas__title">
+              <h1 class="gas__texts">Наши поставщики</h1>
+            </div>
+
+            <div class="companies__logos">
+              <div class="companies-item">
+                <img
+                  src="images/rosneft.png"
+                  alt=""
+                  class="companies-logo"
+                  style="padding-bottom: 50px"
+                />
+              </div>
+
+              <div class="companies-item">
+                <img
+                  src="images/gazprom.png"
+                  alt=""
+                  class="companies-logo"
+                  style="padding: 50px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nefte-product">
+        <div class="container">
+          <div class="gas__title">
+            <h1 class="gas__text">Хранение нефтепродуктов</h1>
+          </div>
+
+          <div class="neft__wrapper">
+            <div class="neft-left">
+              <p class="neft-text">
+                Профилирующим видом деятельности ООО "Нефтеком" является
+                хранение нефтепродуктов на собственной нефтебазе, расположенной
+                по адресу: п. Таёжный Богучанского района Красноярского края, в
+                300-х метрах северо-восточнее жд переезда (ст. Карабула
+                Красноярской ЖД).
+              </p>
+              <img src="images/bollernahui.png" alt="" class="neft-img" />
+            </div>
+
+            <div class="neft-right">
+              <p class="neft-text">
+                Резервуарный парк нефтебазы составляет 10500 м3. Нефтебаза
+                оснащена современным оборудованием, имеет ж/д тупик со сливной
+                эстакадой, что позволяет осуществлять единовременный прием до 12
+                вагоно-цистерн.
+              </p>
+              <p class="neft-text">
+                Выдача нефтепродуктов осуществляется через автоматические
+                системы налива на четыре поста с производительностью до 1000
+                тонн в сутки.
+              </p>
+              <p class="neft-text">
+                ООО "Нефтеком" имеет лицензии на эксплуатацию
+                взрывопожароопасного производственного объекта и на
+                осуществление погрузочно-разгрузочной деятельности применительно
+                к опасным грузам на железнодорожном транспорте. На нефтебазе
+                ежегодно производиться модернизация оборудования и объектов
+                производства.
+              </p>
+              <p class="neft-text">
+                Руководящие работники и персонал нефтебазы «Нефтеком» имеют
+                квалификацию, которая соответствует должности и профессии,
+                проходят своевременное обучение и аттестацию по промышленной
+                безопасности, охране труда и другим необходимым нормами в
+                соответствии с законодательством РФ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our__documents">
+        <div class="container">
+            <div class="gas__title">
+            <h1 class="gas__text">Наши лицензии</h1>
+          </div>
+          <div class="documents">
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+            <div class="documents-item">
+                <img src="images/document.png" alt="" class="doc-img">
+            </div>
+          </div>
+          <div class="documents-modal" id="documentsModal">
+            <button class="documents-modal__close">&times;</button>
+            <div class="documents-modal__body">
+                <img src="" alt="" class="documents-modal__image" id="documentsModalImage">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialist">
+    <div class="container">
+
+        <div class="specialist__wrapper">
+
+            <div class="specialist__content">
+
+                <h2 class="specialist__title">
+                    Необходима помощь специалиста?
+                </h2>
+
+                <p class="specialist__description">
+                    Заполните форму ниже или позвоните по номеру:
+                    +7 (391) 205-33-11 <br>
+                    И мы проконсультируем Вас по всем интересующим вопросам!
+                </p>
+
+                <form class="specialist-form">
+
+                    <div class="specialist-form__grid">
+
+                        <input
+                            class="specialist-form__input"
+                            type="text"
+                            placeholder="Ваше имя"
+                        >
+
+                        <input
+                            class="specialist-form__input"
+                            type="email"
+                            placeholder="Ваш e-mail"
+                        >
+
+                        <input
+                            class="specialist-form__input"
+                            type="tel"
+                            placeholder="Номер телефона"
+                        >
+
+                        <button
+                            class="specialist-form__button"
+                            type="submit"
+                        >
+                            Отправить заявку
+                        </button>
+
+                    </div>
+
+                    <label class="specialist-form__checkbox">
+
+                        <input
+                            class="specialist-form__checkbox-input"
+                            type="checkbox"
+                        >
+
+                        <span class="specialist-form__checkbox-text">
+                            Отправляя заявку, Вы даете свое согласие
+                            на <span class="personality">обработку персональных данных</span>
+                        </span>
+
+                    </label>
+
+                </form>
+
+            </div>
+
+            <div class="specialist__image">
+                <img src="images/specialist.png" draggable="false" alt="Специалист">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="site__nav">
+              <p class="site__title">Навигация по сайту</p>
+              <ul class="footer__ul">
+                <div class="content">
+              <li><a href="index.html" class="footer__links">Главная</a></li>
+              <li><a href="loyality.html" class="footer__links">Бонусная программа</a></li>
+              <li><a href="seti-azs.html" class="footer__links">Сеть АЗС</a></li>
+              <li><a href="#" class="footer__links">Вакансии</a></li>
+              <li><a href="#" class="footer__links">Для юридических лиц</a></li>
+              <li><a href="#" class="footer__links">Контакты</a></li>
+              <li><a href="#" class="footer__links">Карта сайта</a></li>
+              <li><a href="#" class="footer__links">Политика конфиденциальности</a></li>
+              <li><a href="#" class="footer__links">Личный кабинет</a></li>
+            </div>
+            </ul>
+            </div>
+
+            <div class="site__nav--second">
+              <p class="site__title">Наши контакты</p>
+              <ul class="footer__ul">
+                <div class="content">
+                <p class="office">Офис:</p>
+                <p class="adress">660021, Россия, Красноярск,<br> 
+пр. Мира, 128 (оф.140)</p>
+                  <div class="tel">
+                  <p class="telephone">Телефон:</p>
+                  <a href="tel:+78912650448" class="telephone__number">+7 (391) 265-04-48</a>
+                  <p class="tel__desc">отдел канцеляриии
+Часы работы: с 09:00-18:00</p>
+                </div>
+              </div>
+              </ul>
+            </div>
+
+            <div class="site__nav--third">
+              <ul class="footer__ul">
+                
+                <div class="content">
+                  <p class="email-text">E-mail:</p>
+                <div class="mail">
+                <a href="mailto:neftecom-@mail.ru" class="email">neftecom-@mail.ru</a>
+                <p class="email__desc">отдел канцелярии</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:sale@kroil24.ru" class="email">sale@kroil24.ru</a>
+                <p class="email__desc">Оптовая реализация ГСМ</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:promo@neftecom24.ru" class="email">promo@neftecom24.ru</a>
+                <p class="email__desc">Отдел маркетинга</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:kachestvo@neftecom24.ru" class="email">kachestvo@neftecom24.ru</a>
+                <p class="email__desc">Контроль качества</p>
+              </div>
+            </div>
+              </ul>
+            </div>
+
+          </nav>
+
+            <div id="map-test-7" class="map4">
+                
+            </div>
+
+            
+            
+        </div>
+
+
+        
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/modal.js"></script>
+  </body>
+</html>

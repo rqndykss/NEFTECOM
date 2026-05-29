@@ -379,11 +379,6 @@ color: #060628;
   gap: 12px;
 }
 
-
-
-
-
-
 .map__section {
   margin-bottom: 110px;
 }
@@ -537,14 +532,6 @@ margin-right: 130px;
   font-family: var(--main-font);
 }
 
-.container {
-
-}
-
-.image {
- 
-}
-
 .text__rate {
   display: flex;
   align-items: center;
@@ -561,10 +548,6 @@ margin-right: 130px;
   display: flex;
 }
 
-.row {
-  
-}
-
 .column {
   display: flex;
   gap: 40px;
@@ -575,7 +558,6 @@ margin-right: 130px;
   gap: 15px;
   
 }
-
 
 .item {
     border-radius: 15px;

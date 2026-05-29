@@ -1,17 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Программа лояльности</title>
-    <script src="scripts/map.js"></script>
-    <script src="scripts/animateBonus.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="styles/vacancies.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=26fb654c-b639-46a8-96ff-6b8a625b2871&lang=ru_RU"></script>
-    <script src="scripts/script.js"></script>
-
-    <link rel="stylesheet" href="styles/loyality.css" />
-  </head>
-  <body>
+    <script src="scripts/map.js"></script>
+</head>
+<body>
     <header>
       <div class="container">
         <div class="header__content">
@@ -24,14 +21,18 @@
               <ul class="header__nav-links">
                 <li><a href="index.html" class="header__link">Главная</a></li>
                 <li>
-                  <a href="loyality.html" class="header__link active"
+                  <a href="loyality.html" class="header__link"
                     >Бонусная программа</a
                   >
                 </li>
-                <li><a href="seti-azs.html" class="header__link">Сеть АЗС</a></li>
-                <li><a href="vacancies.html" class="header__link">Вакансии</a></li>
+                <li>
+                  <a href="seti-azs.html" class="header__link"
+                    >Сеть АЗС</a
+                  >
+                </li>
+                <li><a href="vacancies.html" class="header__link active">Вакансии</a></li>
                 <li><a href="dlya-ur-lic.html" class="header__link">Для юр. лиц</a></li>
-                <li><a href="kontakti.html" class="header__link">Контакты</a></li>
+                <li><a href="#" class="header__link">Контакты</a></li>
               </ul>
             </nav>
 
@@ -154,233 +155,111 @@
     </header>
 
     <main>
-      <section class="loyality__section">
-        <div class="container">
-          <div class="home__bonus-text">
-            <p class="home__bonus">
-              <a class="home__link" href="index.html">Главная</a> <span class="home__span">&#62;</span>Бонусная программа
-            </p>
-          </div>
-
-          <div class="loality__programm">
-            <h1 class="loaylity__text">Программа лояльности “НЕФТЕКОМ”</h1>
-            <p class="loyality__desc">
-              При покупке нефтепродуктов, товаров в маркете «Нефтеком» и кафе
-              находящихся на АЗС «Нефтеком» бонусы начисляются в следующем
-              порядке:
-            </p>
-          </div>
-
-          <div class="table__wrapper">
-            <table class="table__loyality">
-              <thead>
-                <tr>
-                  <th>Сумма покупок</th>
-                  <th>
-                    Количество начисляемых Бонусов при покупке топлива (за
-                    каждый литр)
-                  </th>
-                  <th>
-                    Количество начисляемых Бонусов при покупке товаров в маркет
-                    «Нефтеком» в процентах от суммы покупки
-                  </th>
-                  <th>
-                    Количество начисляемых Бонусов при покупке товаров в кафе
-                    находящихся <br />
-                    на АЗС «Нефтеком» в процентах от суммы покупки
-                  </th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>до 699,99 рублей</td>
-                  <td>1 бонус</td>
-                  <td>2%</td>
-                  <td>5%</td>
-                </tr>
-
-                <tr>
-                  <td>от 700 до 1999,99 рублей</td>
-                  <td>1,2 бонус</td>
-                  <td>2%</td>
-                  <td>7%</td>
-                </tr>
-
-                <tr>
-                  <td>Свыше 2000 рублей</td>
-                  <td>1,5 бонус</td>
-                  <td>2%</td>
-                  <td>10%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="under">
-            <div class="undertable__text">
-              <p class="under__text">
-                <span class="under__span">*</span> - Срок действия бонусов - 300
-                (триста) календарных дней с момента осуществления покупки.
-              </p>
-              <p class="under__text">
-                <span class="under__span">**</span> - Списание бонусов может
-                производиться в размере не более 50% от суммы покупки
-              </p>
-            </div>
-
-            <div class="under__button">
-              <a href="#" class="under__btn">Условия программы лояльности</a>
-            </div>
-          </div>
-
-          <div class="under__card-wrapper">
-            <div class="under__card-content">
-              <div class="item__under">
-                <img src="images/Ruble.svg" alt="" class="under__img" />
-                <p class="item__under-text">
-                  Стоимость бонусной карты<br/>
-                  <span style="font-weight: 500;" >150 рублей</span>
-                </p>
-              </div>
-
-              <div class="item__under">
-                <img src="images/Gas Station.svg" alt="" class="under__img" />
-                <p class="item__under-text">
-                  Приобрести карту можно на любой заправочной станции сети
-                  “Нефтеком”
-                </p>
-              </div>
-
-              <div class="item__under">
-                <img src="images/Smartphone 2.svg" alt="" class="under__img" />
-                <p class="item__under-text">
-                  Так же вы можете зарегистрировать бесплатную
-                  <a class="virtual__card-link" href="#">виртуальную карту</a> в
-                  нашем приложении.
-                </p>
-              </div>
-            </div>
-          </div>
+        
+        <section class="vacancies__section">
+            <div class="container">
+            <div class="home__bonus-text">
+          <p class="home__bonus">
+            <a class="home__link" href="index.html">Главная</a>
+            <span class="home__span">&#62;</span> Вакансии
+          </p>
         </div>
-      </section>
 
-      <section class="virtual__card-section">
-        <div class="container">
-            <h1 class="loaylity__text">Как получить виртуальную карту</h1>
+        <div class="gas__title">
+          <h1 class="gas__text">Вакансии</h1>
+        </div>
 
-            <div class="virtual__card__content">
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">01</p>
-                <p class="virtual__card__title">Скачайте приложение serviopump mobile
-в <a class="store-link" href="https://apps.apple.com/ru/app/servio-pump-mobile/id1458458139">AppStore</a> или <a class="store-link" href="https://play.google.com/store/apps/details?id=ru.serviopump.spmobile&hl=ru&gl=US&pli=1">Google play.</a></p>
-              </div>
+        <div class="vacancies__wrapper">
+          <img src="images/vacans first.png" alt="" class="vacancies__img">
+        <div class="vacancies__item">
+            
+            <h1 class="vacans__text">Оператор АЗС зп от 32 000 на руки</h1>
+            <p class="vacans__desc">Обязанности:</p>
+            <ul class="vacans__ul">
+              <li class="vacans__title">принимать оплату на кассе (наличный расчет, расчет по картам);</li>
+              <li class="vacans__title">принимать бензовозы с топливом и проверять его количество;</li>
+              <li class="vacans__title">вести учет нефтепродуктов на АЗС (отчетность); поддерживать чистоту на территории и в помещениях АЗС.</li>
+            </ul>
 
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">02</p>
-                <p class="virtual__card__title">Пройдите полную регистрацию: введите номер телефона, придумайте пароль для входа
-в приложение, ФИО, дату рождения.</p>
-              </div>
+            
+            <p class="vacans__desc">Обязанности:</p>
 
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">03</p>
-                <p class="virtual__card__title">Найдите и выберите в списке
-сеть НЕФТЕКОМ.</p>
-              </div>
+            <ul class="vacans__ul">
+              <li class="vacans__title">Опыт работы от 1 года в аналогичной должности или в торговле, также рассматриваем кандидатов без опыта с обучением от 3 смен. Уверенный пользователь ПК.</li>
+              <li class="vacans__title">Коммуникабельность, энергичность, ответственность, аккуратность, грамотная речь.</li>
+            </ul>
 
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">04</p>
-                <p class="virtual__card__title">Нажмите Регистрация в сети АЗС, далее введите специальный код из SMS.</p>
-              </div>
+            <p class="vacans__desc">Условия:</p>
+            <ul class="vacans__ul">
+              <li class="vacans__title">График работы сутки через трое, трудоустройство ТК РФ, белая зп;</li>
+              <li class="vacans__title">Дружный коллектив.</li>
+            </ul>
 
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">05</p>
-                <p class="virtual__card__title">Во вкладке "ПОКУПКИ" будет виден ваш бонусный баланс и все операции по карте.</p>
-              </div>
-
-              <div class="virtual__card__item">
-                <p class="virtual__card-number">06</p>
-                <p class="virtual__card__title">Во вкладке "КАРТЫ" будет отображаться QR-код, который необходимо предъявлять на кассе АЗС
-для начисления и списания бонусов.</p>
-              </div>
-
-            </div>
-
-
-            <section class="info-section">
-  <div class="container">
-
-    <div class="info-section__wrapper">
-
-      <div class="info-section__left">
-        <p class="info-section__text">
-          Бонусы можно потратить на следующий день.
-          Более подробно с правилами участия в Программе
-          лояльности физических лиц — клиентов сети АЗС
-          ООО «Нефтеком» можно ознакомиться
-          <a href="physical-face.html" class="info-section__link">здесь</a>.
-        </p>
-      </div>
-
-      <div class="info-section__right">
-
-  <p class="info-for">
-    Информация для справок:
-  </p>
-
-  <div class="info-grid">
-
-    <div class="info-item">
-      <img src="images/Phone Calling.svg" alt="Телефон">
-
-      <div class="info-item__text">
-        <span>Телефон:</span>
-
-        <a href="tel:+73912864390">
-          8 (391) 286-43-90
-        </a>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <img src="images/Chat Round Dots.svg" alt="Мессенджеры">
-
-      <div class="info-item__text">
-        <span>Мессенджеры:</span>
-
-        <a href="tel:+79535864390">
-          8 (953) 586-43-90
-        </a>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <img src="images/email.svg" alt="Почта">
-
-      <div class="info-item__text">
-        <span>Почта:</span>
-
-        <a href="mailto:promo@neftecom24.ru">
-          promo@neftecom24.ru
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <a href="https://vk.com/neftecom24" class="vk-btn">
-    <img src="images/vk.svg" alt="VK">
-    Мы ВКонтакте
-  </a>
-
+            <div class="vacans__gird">
+              
+            <p class="mail-requst">Заявки отправлять на почту:</p>
+              <div class="item__grid">
+                <img class="grid__mail-img" src="images/email.svg" alt="">
+                <div class="grid__item-text">
+                 <p class="gird-mail-text">Почта:</p>
+                 <a href="mailto:skotnikov.d@kroil24.ru" class="gird-mail">skotnikov.d@kroil24.ru</a>
+                </div>
+                <div class="grid__item-text">
+                 <p class="gird-mail-text">Для:</p>
+                 <p class="gird-mail">Скотникова Дмитрия Сергеевича</p>
+                </div>
 </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="vacancies__wrapper">
+          <img src="images/vacans second.png" alt="" class="vacancies__img">
+        <div class="vacancies__item">
+            
+            <h1 class="vacans__text">Оператор АЗС зп от 32 000 на руки</h1>
+            <p class="vacans__desc">Обязанности:</p>
+            <ul class="vacans__ul">
+              <li class="vacans__title">принимать оплату на кассе (наличный расчет, расчет по картам);</li>
+              <li class="vacans__title">принимать бензовозы с топливом и проверять его количество;</li>
+              <li class="vacans__title">вести учет нефтепродуктов на АЗС (отчетность); поддерживать чистоту на территории и в помещениях АЗС.</li>
+            </ul>
+
+            
+            <p class="vacans__desc">Обязанности:</p>
+
+            <ul class="vacans__ul">
+              <li class="vacans__title">Опыт работы от 1 года в аналогичной должности или в торговле, также рассматриваем кандидатов без опыта с обучением от 3 смен. Уверенный пользователь ПК.</li>
+              <li class="vacans__title">Коммуникабельность, энергичность, ответственность, аккуратность, грамотная речь.</li>
+            </ul>
+
+            <p class="vacans__desc">Условия:</p>
+            <ul class="vacans__ul">
+              <li class="vacans__title">График работы сутки через трое, трудоустройство ТК РФ, белая зп;</li>
+              <li class="vacans__title">Дружный коллектив.</li>
+            </ul>
+
+            <div class="vacans__gird">
+              
+            <p class="mail-requst">Заявки отправлять на почту:</p>
+              <div class="item__grid">
+                <img class="grid__mail-img" src="images/email.svg" alt="">
+                <div class="grid__item-text">
+                 <p class="gird-mail-text">Почта:</p>
+                 <a href="mailto:skotnikov.d@kroil24.ru" class="gird-mail">skotnikov.d@kroil24.ru</a>
+                </div>
+                <div class="grid__item-text">
+                 <p class="gird-mail-text">Для:</p>
+                 <p class="gird-mail">Скотникова Дмитрия Сергеевича</p>
+                </div>
+</div>
+            </div>
+        </div>
+    </div>
 
     </div>
-  </div>
-</section>
+        </section>
 
-        </div>
-      </section>
     </main>
 
     <footer>
@@ -451,12 +330,18 @@
 
           </nav>
 
-            <div id="map-test-3" class="map3">
+            <div id="map-test-7" class="map4">
                 
             </div>
 
+            
+            
+        </div>
+
+
+        
       </div>
     </footer>
 
-  </body>
+</body>
 </html>

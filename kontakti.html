@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты “Нефтеком”</title>
+    <link rel="stylesheet" href="styles/contacts.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=26fb654c-b639-46a8-96ff-6b8a625b2871&lang=ru_RU"></script>
+    <script src="scripts/map.js"></script>
+    
+</head>
+<body>
+     <header>
+      <div class="container">
+        <div class="header__content">
+          <a class="logo" href="#"
+            ><img src="images/logo.png" alt="Logo" class="header__logo"
+          /></a>
+
+          <div class="header__right">
+            <nav class="header__nav">
+              <ul class="header__nav-links">
+                <li><a href="index.html" class="header__link">Главная</a></li>
+                <li>
+                  <a href="loyality.html" class="header__link"
+                    >Бонусная программа</a
+                  >
+                </li>
+                <li>
+                  <a href="seti-azs.html" class="header__link">Сеть АЗС</a>
+                </li>
+                <li>
+                  <a href="vacancies.html" class="header__link">Вакансии</a>
+                </li>
+                <li>
+                  <a href="dlya-ur-lic.html" class="header__link"
+                    >Для юр. лиц</a
+                  >
+                </li>
+                <li><a href="kontakti.html" class="header__link active">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="call">
+              <a class="number" href="tel:+89535864390">8 953 586 43 90</a>
+              <a href="#" class="form__call">Обратный звонок</a>
+            </div>
+
+            <button class="header__btn">Личный кабинет</button>
+          </div>
+        </div>
+
+        <div class="block__section">
+          <div class="block__content">
+            <div class="card__block-flex">
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <a href="seti-azs.html" class="card__text">13 АЗС</a>
+                  <p class="card__desc">в Красноярском крае</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">150</p>
+                  <p class="card__desc">Сотрудников</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">1000</p>
+                  <p class="card__desc">Клиентов в день</p>
+                </a>
+              </div>
+
+              <div class="card-item">
+                <a href="#">
+                  <div class="img--card">
+                    <svg
+                      class="card-img"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="14" cy="14" r="13.5" stroke="white" />
+                      <path
+                        d="M17.5892 14.0304V10.659C17.5892 10.5229 17.4708 10.4102 17.3279 10.4102H13.788C13.6451 10.4102 13.5267 10.5229 13.5267 10.659C13.5267 10.7951 13.6492 10.9118 13.7921 10.9118L16.7073 10.9157L10.1337 17.1801C10.0317 17.2773 10.0194 17.4251 10.1215 17.5223C10.2236 17.6195 10.3787 17.6079 10.4808 17.5106L17.0544 11.2501L17.0585 14.0265C17.0585 14.0965 17.0911 14.1587 17.136 14.2054C17.185 14.252 17.2504 14.2793 17.3238 14.2793C17.4708 14.2793 17.5892 14.1665 17.5892 14.0304Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card__text">5000</p>
+                  <p class="card__desc">Победителей в год</p>
+                </a>
+              </div>
+
+              <div class="quality-all">
+                <img
+                  class="quality__img"
+                  src="images/Vector.svg"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+    <div class="contact-section">
+        <div class="container">
+            <div class="home__bonus-text">
+                <p class="home__bonus">
+                    <a class="home__link" href="index.html">Главная</a>
+                    <span class="home__span">&#62;</span> Контакты
+                </p>
+            </div>
+
+            <div class="contacts-main">
+                
+                <div class="contacts-info">
+                    <h1 class="gas__text">Контакты “Нефтеком”</h1>
+                    
+                    <div class="contacts-details">
+
+  <div class="contacts-section">
+    <p class="contact-title">Офис:</p>
+    <div class="contacts-row">
+      <div class="contact-icon">
+        <img src="images/Global.svg" alt="Офис">
+      </div>
+      <div class="contact-info">
+        <p class="contacts-text">660021, Россия, Красноярск, пр. Мира, 128 (оф.140)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts-section">
+    <p class="contact-title">Телефон:</p>
+    <div class="contacts-row">
+      <div class="contact-icon">
+        <img src="images/Phone Calling.svg" alt="Телефон">
+      </div>
+      <div class="contact-info">
+        <div class="info-group">
+          <a href="tel:+73912650448" class="contacts-text">+7 (391) 265-04-48</a>
+          <p class="contacts-desc">(отдел канцелярии) / Часы работы: с 09:00-18:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts-section">
+    <p class="contact-title">E-mail:</p>
+    <div class="contacts-row">
+      <div class="contact-icon">
+        <img src="images/Email.svg" alt="Email">
+      </div>
+      <div class="contact-info">
+        <div class="info-group">
+          <a href="mailto:neftecom-@mail.ru" class="contacts-text">neftecom-@mail.ru</a>
+          <p class="contacts-desc">отдел канцелярии</p>
+        </div>
+        <div class="info-group">
+          <a href="mailto:sale@kroil24.ru" class="contacts-text">sale@kroil24.ru</a>
+          <p class="contacts-desc">Оптовая реализация ГСМ</p>
+        </div>
+        <div class="info-group">
+          <a href="mailto:promo@neftecom24.ru" class="contacts-text">promo@neftecom24.ru</a>
+          <p class="contacts-desc">Отдел маркетинга</p>
+        </div>
+        <div class="info-group">
+          <a href="mailto:kachestvo@neftecom24.ru" class="contacts-text">kachestvo@neftecom24.ru</a>
+          <p class="contacts-desc">Контроль качества</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts-section">
+    <p class="contact-title">Реквизиты компании:</p>
+    <div class="contacts-row">
+      <div class="contact-icon">
+        <img src="images/Document.svg" alt="Реквизиты">
+      </div>
+      <div class="contact-info">
+        <div class="info-group">
+          <p class="contacts-desc">Полное наименование:</p>
+          <p class="contacts-text">Общество с ограниченной ответственностью «Нефтеком»</p>
+        </div>
+        <div class="info-group">
+          <p class="contacts-desc">Основной государственный регистрационный номер (ОГРН)</p>
+          <p class="contacts-text">1022400669026</p>
+        </div>
+        <div class="info-group">
+          <p class="contacts-desc">Идентификационный номер налогоплательщика (ИНН)</p>
+          <p class="contacts-text">2411011517</p>
+        </div>
+        <div class="info-group">
+          <p class="contacts-desc">Код причины постановки на учет (КПП)</p>
+          <p class="contacts-text">246601001</p>
+        </div>
+        <div class="info-group">
+          <p class="contacts-desc">Юридический адрес</p>
+          <p class="contacts-text">660049, г. Красноярск, ул. Марковского, д. 45, пом. 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+                </div>
+
+                <div class="contacts-img-box">
+                    <img src="images/contacts img.png" alt="Офис Нефтеком" class="contacts-img">
+                </div>
+
+            </div> 
+        </div>
+    </div>
+</main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="site__nav">
+              <p class="site__title">Навигация по сайту</p>
+              <ul class="footer__ul">
+                <div class="content">
+              <li><a href="index.html" class="footer__links">Главная</a></li>
+              <li><a href="loyality.html" class="footer__links">Бонусная программа</a></li>
+              <li><a href="seti-azs.html" class="footer__links">Сеть АЗС</a></li>
+              <li><a href="vacancies.html" class="footer__links">Вакансии</a></li>
+              <li><a href="dlya-ur-lic.html" class="footer__links">Для юридических лиц</a></li>
+              <li><a href="kontakti.html" class="footer__links">Контакты</a></li>
+              <li><a href="karta-saita.html" class="footer__links">Карта сайта</a></li>
+              <li><a href="#" class="footer__links">Политика конфиденциальности</a></li>
+              <li><a href="#" class="footer__links">Личный кабинет</a></li>
+            </div>
+            </ul>
+            </div>
+
+            <div class="site__nav--second">
+              <p class="site__title">Наши контакты</p>
+              <ul class="footer__ul">
+                <div class="content">
+                <p class="office">Офис:</p>
+                <p class="adress">660021, Россия, Красноярск,<br> 
+пр. Мира, 128 (оф.140)</p>
+                  <div class="tel">
+                  <p class="telephone">Телефон:</p>
+                  <a href="tel:+78912650448" class="telephone__number">+7 (391) 265-04-48</a>
+                  <p class="tel__desc">отдел канцеляриии
+Часы работы: с 09:00-18:00</p>
+                </div>
+              </div>
+              </ul>
+            </div>
+
+            <div class="site__nav--third">
+              <ul class="footer__ul">
+                
+                <div class="content">
+                  <p class="email-text">E-mail:</p>
+                <div class="mail">
+                <a href="mailto:neftecom-@mail.ru" class="email">neftecom-@mail.ru</a>
+                <p class="email__desc">отдел канцелярии</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:sale@kroil24.ru" class="email">sale@kroil24.ru</a>
+                <p class="email__desc">Оптовая реализация ГСМ</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:promo@neftecom24.ru" class="email">promo@neftecom24.ru</a>
+                <p class="email__desc">Отдел маркетинга</p>
+              </div>
+
+              <div class="mail">
+                <a href="mailto:kachestvo@neftecom24.ru" class="email">kachestvo@neftecom24.ru</a>
+                <p class="email__desc">Контроль качества</p>
+              </div>
+            </div>
+              </ul>
+            </div>
+
+          </nav>
+
+            <div id="map-test-7" class="map4">
+                
+            </div>
+
+            
+            
+        </div>
+
+
+        
+      </div>
+    </footer>
+
+</body>
+</html>

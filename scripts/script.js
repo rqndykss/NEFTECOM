@@ -1,16 +1,24 @@
-const elements = document.querySelectorAll(`.card__wrapper`);
+const elements = document.querySelectorAll(
+  '.card__wrapper, .azs-anim, .fuel-item, .companies-item, .documents-item, .azs-item'
+);
 
+console.log(elements);
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
+  entries.forEach(entry => {
+    console.log(entry.isIntersecting, entry.target);
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0
 });
 
-elements.forEach(el => observer.observe(el));
-
+elements.forEach(element => {
+  observer.observe(element);
+});
 
 const video = document.getElementById("video");
 const playBtn = document.getElementById("playBtn");

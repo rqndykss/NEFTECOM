@@ -1,78 +1,128 @@
-let center1 = [56.05954224237073, 92.93911029702112];
-let center2 = [56.010739, 92.841843];
+const mapsConfig = [
+    {
+        id: 'map-test',
+        center: [56.05954224237073, 92.93911029702112],
+        zoom: 18,
+        placemark: {
+            coords: [56.05952840178217, 92.93878026963759],
+            text: 'Комсомольский просп., 2А',
+            icon: 'images/marker.png'
+        }
+    },
+
+    {
+        id: 'map-test-2',
+        center: [56.010739, 92.841843],
+        zoom: 16,
+        placemark: {
+            coords: [56.010739, 92.841843],
+            text: 'Проспект Мира, 128',
+            icon: 'images/marker-2.svg'
+        }
+    },
+
+    {
+        id: 'map-test-3',
+        center: [56.010739, 92.841843],
+        zoom: 16,
+        placemark: {
+            coords: [56.010739, 92.841843],
+            text: 'Проспект Мира, 128',
+            icon: 'images/marker-2.svg'
+        }
+    },
+
+    {
+        id: 'map-test-4',
+        center: [56.010739, 92.841843],
+        zoom: 16,
+        placemark: {
+            coords: [56.010739, 92.841843],
+            text: 'Проспект Мира, 128',
+            icon: 'images/marker-2.svg'
+        }
+    },
+
+    {
+        id: 'map-test-5',
+        center: [56.010739, 92.841843],
+        zoom: 16,
+        placemark: {
+            coords: [56.010739, 92.841843],
+            text: 'Проспект Мира, 128',
+            icon: 'images/marker-2.svg'
+        }
+    },
+
+    {
+        id: 'map-test-6',
+        center: [56.05954224237073, 92.93911029702112],
+        zoom: 18,
+        placemark: {
+            coords: [56.05952840178217, 92.93878026963759],
+            text: 'Комсомольский просп., 2А',
+            icon: 'images/marker.png'
+        }
+    },
+
+    {
+        id: 'map-test-7',
+        center: [56.010739, 92.841843],
+        zoom: 16,
+        placemark: {
+            coords: [56.010739, 92.841843],
+            text: 'Проспект Мира, 128',
+            icon: 'images/marker-2.svg'
+        }
+    }
+];
 
 function init() {
 
-    let map1 = new ymaps.Map('map-test', {
-        center: center1,
-        zoom: 18
-    });
+    mapsConfig.forEach(config => {
 
-    let placemark1 = new ymaps.Placemark(
-        [56.05952840178217,92.93878026963759],
-        {
-            balloonContentHeader: 'Комсомольский просп., 2А'
-        },
-        {
-            iconLayout: 'default#image',
-            iconImageHref: 'images/marker.png',
-            iconImageSize: [74, 74],
-            iconImageOffset: [-20, -50]
-        }
-    );
+        const mapElement = document.getElementById(config.id);
 
-    map1.geoObjects.add(placemark1);
+        if (!mapElement) return;
 
-    let map2 = new ymaps.Map('map-test-2', {
-        center: center2,
-        zoom: 16
-    });
+        const map = new ymaps.Map(config.id, {
+            center: config.center,
+            zoom: config.zoom
+        });
 
-    let placemark2 = new ymaps.Placemark(
-        [56.010739, 92.841843],
-        {
-            balloonContentHeader: 'Проспект Мира, 128'
-        },
-        {
-            iconLayout: 'default#image',
-            iconImageHref: 'images/marker-2.svg',
-            iconImageSize: [74, 74],
-            iconImageOffset: [-20, -50]
-        }
-    );
+        const placemark = new ymaps.Placemark(
+            config.placemark.coords,
+            {
+                balloonContentHeader: config.placemark.text
+            },
+            {
+                iconLayout: 'default#image',
+                iconImageHref: config.placemark.icon,
+                iconImageSize: [74, 74],
+                iconImageOffset: [-20, -50]
+            }
+        );
 
-    map2.geoObjects.add(placemark2);
+        map.geoObjects.add(placemark);
 
-
-    let map3 = new ymaps.Map('map-test-3', {
-        center: center2,
-        zoom: 16
-    });
-
-    let placemark3 = new ymaps.Placemark(
-        [56.010739, 92.841843],
-        {
-            balloonContentHeader: 'Проспект Мира, 128'
-        },
-        {
-            iconLayout: 'default#image',
-            iconImageHref: 'images/marker-2.svg',
-            iconImageSize: [74, 74],
-            iconImageOffset: [-20, -50]
-        }
-    );
-
-    map3.geoObjects.add(placemark2);
-
-    [map1, map2, map3].forEach(map => {
         map.controls.remove('geolocationControl');
         map.controls.remove('typeSelector');
         map.controls.remove('rulerControl');
         map.controls.remove('searchControl');
         map.controls.remove('fullscreenControl');
-        map2.container.fitToViewport();
+
+        map.container.fitToViewport();
     });
 
 }
 
-ymaps.ready(init);
+
+window.addEventListener('load', () => {
+
+    if (typeof ymaps !== 'undefined') {
+        ymaps.ready(init);
+    } else {
+        console.error('Yandex Maps API not loaded');
+    }
+
+});

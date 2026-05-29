@@ -1,19 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(
+    ".item__under, .virtual__card__item",
+  );
 
-  const elements = document.querySelectorAll('.item__under');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-
-    });
-  }, {
-    threshold: 0.2
+  elements.forEach((el, index) => {
+    const row = Math.floor(index / 3);
+    el.style.transitionDelay = `${row * 0.4}s`;
   });
 
-  elements.forEach(el => observer.observe(el));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
 
+  elements.forEach((el) => observer.observe(el));
 });
